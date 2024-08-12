@@ -12,39 +12,45 @@ class Student{
 
     updateGender(newGender){
         this.gender = newGender;
+        
     }
 }
 
-const brendan = new Student("Brendan Gwer",20,"SDF-FT10 Remote","Male");
+// const brendan = new Student("Brendan Gwer",20,"SDF-FT10 Remote","Male");
 
-brendan.updateGender("non-binary");
-console.log(brendan.getDetails());
+// brendan.updateGender("non-binary");
+// console.log(brendan.cohort);
+// console.log(brendan.getDetails());
 // brendan.getDetails();
 
-class Transaction {
-    constructor(amount, date, memo) {
-      this._amount = amount;
-      this._date = date;
-      this._memo = memo;
-    }
-  }
-
-
 // class Transaction {
-//     // declare private fields
-//     #amount;
-//     #date;
-//     #memo;
 //     constructor(amount, date, memo) {
-//       // assign values to private fields
-//       this.#amount = amount;
-//       this.#date = date;
-//       this.#memo = memo;
+//       this._amount = amount;
+//       this._date = date;
+//       this._memo = memo;
 //     }
 //   }
 
+// const mpesa = new Transaction(500, "28-05-06",true);
+// console.log(mpesa._amount);
+
+
+class Transaction {
+    // declare private fields
+    #amount;
+    #date;
+    #memo;
+    constructor(amount, date, memo) {
+      // assign values to private fields
+      this.#amount = amount;
+      this.#date = date;
+      this.#memo = memo;
+    }
+  }
+
   const transaction = new Transaction(100.24, "03/04/2018", "Grocery Shopping");
   transaction.amount;
+//   console.log(transaction.#amount)
 
 //   transaction.#amount;
   
