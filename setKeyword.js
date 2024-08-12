@@ -10,6 +10,7 @@ class Student {
       return this._name;
     }
 
+    // allows us to set name to a new valllue
     set name(newName) {
       if (newName && typeof newName === 'string') {
         this._name = newName;
