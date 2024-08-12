@@ -21,3 +21,30 @@ brendan.updateGender("non-binary");
 console.log(brendan.getDetails());
 // brendan.getDetails();
 
+class Transaction {
+    constructor(amount, date, memo) {
+      this._amount = amount;
+      this._date = date;
+      this._memo = memo;
+    }
+  }
+
+
+// class Transaction {
+//     // declare private fields
+//     #amount;
+//     #date;
+//     #memo;
+//     constructor(amount, date, memo) {
+//       // assign values to private fields
+//       this.#amount = amount;
+//       this.#date = date;
+//       this.#memo = memo;
+//     }
+//   }
+
+  const transaction = new Transaction(100.24, "03/04/2018", "Grocery Shopping");
+  transaction.amount;
+
+//   transaction.#amount;
+  
